@@ -1,0 +1,6 @@
+@TNSTestAPI_HostAddress = http://localhost:5178
+
+GET {{TNSTestAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
