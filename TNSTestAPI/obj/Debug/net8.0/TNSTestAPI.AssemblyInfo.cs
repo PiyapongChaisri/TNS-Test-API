@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TNSTestAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+174d134a55b5cc3922c18340531c09b36838deae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9398a40b8268279e3621ece3066364edb86516d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TNSTestAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TNSTestAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
