@@ -2,14 +2,12 @@
 {
     public class User
     {
-        public int UserId { get; set; }
-        public string? Name { get; set; }
-        public string? Email { get; set; }
+        public int user_id { get; set; }
+        public string username { get; set; }
+        public string? full_name { get; set; }
 
         // Foreign key
-        public int DepartmentId { get; set; }
+        public int department_id { get; set; }
 
-        // Navigation property
-        public Department? Department { get; set; }
     }
 }

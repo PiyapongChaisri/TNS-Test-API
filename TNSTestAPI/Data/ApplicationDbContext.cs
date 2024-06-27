@@ -8,17 +8,15 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    public DbSet<Department> Departments { get; set; }
-    public DbSet<User> Users { get; set; }
+    public DbSet<Department> departments { get; set; }
+    public DbSet<User> users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-
-        // Fluent API configuration
         modelBuilder.Entity<Department>()
-            .HasMany(d => d.Users)
-            .WithOne(u => u.Department)
-            .HasForeignKey(u => u.DepartmentId);
+            .HasKey(d => d.department_id);
+        modelBuilder.Entity<User>()
+            .HasKey(u => u.user_id);
     }
 }

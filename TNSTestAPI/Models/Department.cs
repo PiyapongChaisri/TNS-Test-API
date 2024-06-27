@@ -2,11 +2,10 @@
 {
     public class Department
     {
-        public int DepartmentId { get; set; }
-        public string? Name { get; set; }
+        public int department_id { get; set; }
+        public string department_name { get; set; }
+        public string department_description { get; set; }
 
-        // Navigation property
-        public List<User>? Users { get; set; }
     }
 }
 

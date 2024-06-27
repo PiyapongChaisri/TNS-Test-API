@@ -24,20 +24,15 @@ namespace TNSTestAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Department>>> GetDepartments()
         {
-            var departments = await _context.Departments
-                                            .Include(d => d.Users)
-                                            .ToListAsync();
+            var departments = await _context.departments.ToListAsync();
             return Ok(departments);
         }
 
         // GET: api/Department/5
-        // Get a specific department by id including its users
         [HttpGet("{id}")]
         public async Task<ActionResult<Department>> GetDepartment(int id)
         {
-            var department = await _context.Departments
-                                           .Include(d => d.Users)
-                                           .FirstOrDefaultAsync(d => d.DepartmentId == id);
+            var department = await _context.departments.FirstOrDefaultAsync(d => d.department_id == id);
 
             if (department == null)
             {
@@ -52,10 +47,12 @@ namespace TNSTestAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Department>> CreateDepartment(Department department)
         {
-            _context.Departments.Add(department);
+            var next_id = await _context.departments.OrderByDescending(x=> x.department_id).Select(x => x.department_id).FirstOrDefaultAsync() + 1;
+            department.department_id = next_id;
+            _context.departments.Add(department);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetDepartment), new { id = department.DepartmentId }, department);
+            return CreatedAtAction(nameof(GetDepartment), new { id = department.department_id }, department);
         }
 
         // PUT: api/Department/5
@@ -63,7 +60,7 @@ namespace TNSTestAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateDepartment(int id, Department department)
         {
-            if (id != department.DepartmentId)
+            if (id != department.department_id)
             {
                 return BadRequest("Department ID mismatch");
             }
@@ -91,13 +88,13 @@ namespace TNSTestAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDepartment(int id)
         {
-            var department = await _context.Departments.FindAsync(id);
+            var department = await _context.departments.FindAsync(id);
             if (department == null)
             {
                 return NotFound();
             }
 
-            _context.Departments.Remove(department);
+            _context.departments.Remove(department);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -106,7 +103,7 @@ namespace TNSTestAPI.Controllers
         // Check if a department exists by id
         private bool DepartmentExists(int id)
         {
-            return _context.Departments.Any(e => e.DepartmentId == id);
+            return _context.departments.Any(e => e.department_id == id);
         }
     }
 }

@@ -24,7 +24,7 @@ namespace TNSTestAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            var users = await _context.Users.Include(u => u.Department).ToListAsync();
+            var users = await _context.users.ToListAsync();
             return Ok(users);
         }
 
@@ -33,8 +33,7 @@ namespace TNSTestAPI.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUser(int id)
         {
-            var user = await _context.Users.Include(u => u.Department)
-                                           .FirstOrDefaultAsync(u => u.UserId == id);
+            var user = await _context.users.FirstOrDefaultAsync(u => u.user_id == id);
 
             if (user == null)
             {
@@ -49,10 +48,12 @@ namespace TNSTestAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> CreateUser(User user)
         {
-            _context.Users.Add(user);
+            var next_id = await _context.users.OrderByDescending(x => x.user_id).Select(x => x.user_id).FirstOrDefaultAsync() + 1;
+            user.user_id = next_id;
+            _context.users.Add(user);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetUser), new { id = user.UserId }, user);
+            return CreatedAtAction(nameof(GetUser), new { id = user.user_id }, user);
         }
 
         // PUT: api/User/5
@@ -60,7 +61,7 @@ namespace TNSTestAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUser(int id, User user)
         {
-            if (id != user.UserId)
+            if (id != user.user_id)
             {
                 return BadRequest("User ID mismatch");
             }
@@ -88,13 +89,13 @@ namespace TNSTestAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
-            var user = await _context.Users.FindAsync(id);
+            var user = await _context.users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
 
-            _context.Users.Remove(user);
+            _context.users.Remove(user);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -103,7 +104,7 @@ namespace TNSTestAPI.Controllers
         // Check if a user exists by id
         private bool UserExists(int id)
         {
-            return _context.Users.Any(e => e.UserId == id);
+            return _context.users.Any(e => e.user_id == id);
         }
     }
 }
