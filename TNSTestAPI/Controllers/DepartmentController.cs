@@ -24,7 +24,7 @@ namespace TNSTestAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Department>>> GetDepartments()
         {
-            var departments = await _context.departments.ToListAsync();
+            var departments = await _context.departments.OrderBy(x => x.department_id).ToListAsync();
             return Ok(departments);
         }
 
@@ -47,7 +47,7 @@ namespace TNSTestAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Department>> CreateDepartment(Department department)
         {
-            var next_id = await _context.departments.OrderByDescending(x=> x.department_id).Select(x => x.department_id).FirstOrDefaultAsync() + 1;
+            var next_id = await _context.departments.OrderByDescending(x => x.department_id).Select(x => x.department_id).FirstOrDefaultAsync() + 1;
             department.department_id = next_id;
             _context.departments.Add(department);
             await _context.SaveChangesAsync();

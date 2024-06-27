@@ -24,7 +24,7 @@ namespace TNSTestAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
-            var users = await _context.users.ToListAsync();
+            var users = await _context.users.OrderBy(x => x.user_id).ToListAsync();
             return Ok(users);
         }
 

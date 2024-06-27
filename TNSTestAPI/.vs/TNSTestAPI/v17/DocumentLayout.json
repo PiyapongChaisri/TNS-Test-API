@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,6 +13,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|solutionrelative:models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90A33030-3735-4A1C-8D84-24B31F7AECA7}|TNSTestAPI.csproj|d:\\project\\tns-test-api\\tnstestapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,46 +50,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-06-27T18:30:13.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
               "ToolTip": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Controllers\\UserController.cs",
               "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDUAAAAuAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAA1wB4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T16:16:57.916Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T16:13:14.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Department.cs",
               "DocumentMoniker": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Models\\Department.cs",
               "RelativeDocumentMoniker": "Models\\Department.cs",
@@ -106,46 +102,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-27T16:02:39.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
               "ToolTip": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Controllers\\DepartmentController.cs",
               "RelativeToolTip": "Controllers\\DepartmentController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAD4vxkAAAAIAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAD4vxYAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T16:01:06.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACgAAAAaAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T16:00:31.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Project\\TNS-Test-API\\TNSTestAPI\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
